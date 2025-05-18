@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const todoList = document.querySelector('.todo-list');
-    const input = document.querySelector('.input input[type="text"]');
+    const input = document.querySelector('.add-list input[type="text"]');
     const itemsLeft = document.querySelector('footer span');
     const filterButtons = document.querySelectorAll('.bottom-info a');
     const clearCompleted = document.querySelector('.bottom-comment');
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return li;
     }
 
-    input.addEventListener('keypress', function (e) {
+    input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' && input.value.trim()) {
             const newTodo = createNewTodoItem(input.value.trim());
             todoList.appendChild(newTodo);
