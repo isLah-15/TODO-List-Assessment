@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-Assignmnet</title>
+
+    <link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="page-title">
+            <h1>T O D O</h1>
+            <img alt="Toggle Theme" class="theme-toggle" src="images/icon-moon.svg">
+        </div>
+
+        <div class="add-list">
+            <input id="newTodo" name="newTodo" type="checkbox">
+            <label for="newTodo">
+                <input id="newTodo" name="newTodo" placeholder="Create a todo..." type="text">
+            </label>
+        </div>
+
+        <section id="main-section">
+            <ul class="todo-list">
+                <li class="accomplished">
+                    <input checked type="checkbox"/>
+                    <span>Completed online JavaScript course</span>
+                    <button class="delete-button"></button>
+                </li>
+
+                <li>
+                    <input type="checkbox"/>
+                    <span>Jog around the park 3x</span>
+                    <button class="delete-button"></button>
+                </li>
+
+                <li>
+                    <input type="checkbox"/>
+                    <span>10 minutes meditation</span>
+                    <button class="delete-button"></button>
+                </li>
+
+                <li>
+                    <input type="checkbox"/>
+                    <span>Read for 1 hour</span>
+                    <button class="delete-button"></button>
+                </li>
+
+                <li>
+                    <input type="checkbox"/>
+                    <span>Pick up groceries</span>
+                    <button class="delete-button"></button>
+                </li>
+
+                <li>
+                    <input type="checkbox"/>
+                    <span>Complete Todo App on Frontend Mentor</span>
+                    <button class="delete-button"></button>
+                </li>
+            </ul>
+
+            <footer>
+                <span>5 items left</span>
+                <div class="bottom-info">
+                    <a href="all">All</a>
+                    <a href="active">Active</a>
+                    <a href="completed">Completed</a>
+                </div>
+                <a href="clear-completed">Clear Completed</a>
+            </footer>
+        </section>
+
+        <div class="bottom-comment">
+            <h4>Drag and drop to reorder list </h4>
+        </div>
+
+    </div>
+    
+</body>
+</html>
